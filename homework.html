@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>флексбоксы</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <style>
+  body {
+    font-family: arial;
+  }
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .panel {
+      background-color: #4285f4;
+      display: flex;
+      padding: 10px;
+      justify-content: flex-end;
+    }
+    .panel li {
+      margin: 0 15px;
+      text-transform: uppercase;
+    }
+    .blok {
+      display: flex;
+    }
+    .image {
+      flex-grow: 1;
+      background-image: url(https://avatars.mds.yandex.net/get-zen_doc/964926/pub_5dc85ec6cb3bd340e4f12ed5_5dc8600ecd7152643c8da2d3/scale_1200);
+      background-size: cover;
+      background-position: 50% 25%;
+    }
+    .text {
+      flex-basis: 350px;
+      min-height: 350px;
+      padding: 25px;
+      text-align: right;
+    }
+    .zakaz {
+      text-transform: uppercase;
+      background-color: green;
+      color: white;
+      padding: 15px;
+      font-weight: bold;
+      border-radius: 5px;
+      border: none;
+    }
+    .text, .zakaz {
+      margin-top: 25px;
+    }
+    .galerey {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 25px 0;
+      border-top: 2px solid #4285F4;
+      border-bottom: 2px solid #4285F4;
+    }
+    .foto {
+      padding: 10px;
+      margin: 0;
+      font-size: 0;
+      display: flex;
+      width: 100%;
+      height: 300px;
+    }
+    .foto img {
+      width: calc(100% / 4);
+      border: 25px solid white;
+      box-sizing: border-box;
+      align-items: center;
+    }
+    .end {
+      background-color: #34A853;
+      padding: 10px 0;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <nav>
+    <ul class=panel>
+      <li><a href="">ГЛАВНАЯ</a></li>
+      <li><a href="">О НАС</a></li>
+      <li><a href="">ГАЛЕРЕЯ</a></li>
+      <li><a href="">ЗАКАЗАТЬ</a></li>
+    </ul>
+  </nav>
+  <div class="blok">
+    <div class="image">
+      <img src="image/med2" alt="">
+    </div>
+    <div class="text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, distinctio, consequatur, excepturi, odit aliquid doloremque accusamus minima
+      adipisci eaque ad debitis hic voluptas iusto. Ad, magni, voluptates, nostrum, reiciendis vel placeat aliquid distinctio in quod ea optio laborum veritatis
+      facilis molestiae sunt! Nemo, qui aliquid illum saepe officiis itaque similique nostrum molestiae sint eaque unde quas fuga repellendus nobis quod animi
+      veniam officia exercitationem et impedit voluptas inventore placeat repudiandae. Iusto, numquam, aut, eos, necessitatibus nihil tenetur temporibus iste 
+      ab ea dolorum placeat aliquid? Dignissimos, quod, alias assumenda numquam sequi aspernatur explicabo voluptate perspiciatis voluptatibus odit unde optio
+      suscipit sed!
+      </p>
+      <button class="zakaz">заказать</button>
+    </div>
+  </div>
+  </header>
+  <main>
+    <h2 class="galerey">ГАЛЕРЕЯ</h2>
+    <div class="foto">
+      <img src="image\med1.jpg" alt="">
+      <img src="image\med3.jpg" alt="">
+      <img src="image\med4.jpg" alt="">
+      <img src="image\med5.jpg" alt="">
+    </div>
+  </main>
+  <footer>
+    <div class="end">©FlexBox</div>
+  </footer>
+</body>
+</html>
