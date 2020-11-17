@@ -1,0 +1,13 @@
+let ageTable = document.getElementById('age-table');
+console.log(ageTable);
+let allLabei = document.querySelectorAll('#age-list label');
+console.log(allLabei);
+let oneTd = document.querySelector("td");
+console.log(oneTd);
+let formSearh = document.querySelector('[name="search"]');
+console.log(formSearh);
+let oneInput = formSearh.querySelector('input');
+console.log (oneInput);
+let form = formSearh.querySelectorAll('input');
+console.log (form);
+console.log (form[1]);
